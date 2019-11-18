@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculo de Gastos</title>
+</head>
+
+<body>
+    <br>
+    <h1>Calculo de Gastos</h1>
+    <br>
+    <br>
+    <form name="frmGastos">
+        <p>Dinheiro R$: <input type="text" name="txtDinheiro" size="4"></p>
+        <br>
+        <br>
+        <hr>
+        Gasto1 R$: <input type="text" name="txtGasto1" size="4">
+        <hr>
+        <p>Gasto2 R$: <input type="text" name="txtGasto2" size="4"></p>
+        <hr>
+        <p>Gasto3 R$: <input type="text" name="txtGasto3" size="4"></p>
+        <hr>
+        <input type="button" value="Calcular" size="6" onclick="calcularGastos()">
+        <input type="reset" value="Novo">
+        <p>Sobra de Dinheiro R$: <input type="text"  name="txtResultado" size="8" disabled></p>
+    </form>
+    <script src="calculoGasto.js"></script>
+
+</body>
+
+</html>

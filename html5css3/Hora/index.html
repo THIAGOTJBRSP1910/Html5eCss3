@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calcular Valor do Serviço</title>
+</head>
+<body>
+    <h1>Calcular Valor do Serviço</h1>
+    <form name="frmCalcularServiço">
+    <input type="text" placeholder="Salario" name="txtSalario">
+    <input type="text" placeholder="Imposto" name="txtImposto">
+    <p><input type="button" value="Calcular" onclick="calcularServiço()"></p>
+    <p><input type="text" placeholder="ValorTotal" name="txtValorTotal"></p>
+    <hr>
+    <input type="text" placeholder="CustoOperacional" name="txtCustoOperacional">
+    <input type="text" placeholder="Investimento" name="txtInvestimento">
+    <p><input type="button" value="Calcular" onclick="calcularCusto()"></p>
+    <p><input type="text" placeholder="ValorCusto" name="txtValorCusto"></p>
+    <hr>
+    <input type="text" placeholder="CargaHoraria" name="txtCargaHoraria">
+    <input type="text" placeholder="Total" name="txtTotal">
+    <p><input type="button" value="Calcular" onclick="calcularHora()"></p>
+    <p><input type="text" placeholder="ValorTotalHora" name="txtValorTotalHora"></p>
+    <hr>
+    <input type="text" placeholder="ValorTotalDeTudo" name="txtValorTotalDeTudo">
+    <p><input type="button" value="Calcular" onclick="calcularTudo()"></p>
+    </form>
+    <script src="calcularServiço.js"></script>
+    </body>
+    
+</body>
+</html>

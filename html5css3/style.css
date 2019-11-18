@@ -1,0 +1,384 @@
+/**
+* Folha de estilo do site html5 + CSS3
+*@author Thiago
+*/
+
+/****************Importando fontes************/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans&display=swap');
+
+/*****************Principal*******************/
+/* o bloco abaixo compatiliza os navegadores */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    background-color: #a9a9a9;
+}
+
+/*
+    # (id) . (class) - Podemos criar um estilo para a TAG, id ou class
+    */
+
+
+    
+#main{
+    max-width: 1024px;
+    background-color: #0000008c;
+    margin: 0 auto; /* centraliza a div */
+    margin-top: 50px; /*box model*/
+}
+
+
+
+
+ /************ header ****************/
+ header{
+     width: 100%;
+ }
+ #social{
+     
+     float: right;
+     /*margin-top: 20px;
+     margin-right: 20px;
+     /* box model completo especificamos top rifht bottom left*/
+     padding: 20px 20px 0px 0px;
+ }
+
+ #logo{
+     /* box  model completo*/
+     padding: 20px;
+ }
+ /****************Menu**************/
+
+nav{
+    width: 100%;
+    max-width: 1024px;
+    position: absolute;
+}
+nav ul{
+    list-style: none;
+}
+nav > ul > li{
+    float: left;
+    width: 25%;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #800000;
+    padding: 15px;
+    display: block;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+nav ul li a:hover{
+    background-color: #5c0202;
+    transition: all 0.3s;
+}
+
+nav li ul{
+    display: none;
+}
+
+nav li:hover ul{
+    display: block;
+}
+
+.Detalhes:after{
+    content: '';
+    border: 5px solid transparent;
+    border-top-color: #ffffff;
+    display: inline-block;
+    vertical-align: middle;
+}
+.Mobile{
+    display: none;
+}
+.Fixar{
+    position: fixed;
+    top: 0;
+}
+/**************Banner**************/
+#banner{
+    margin-top: 51px;
+    height: 350px;
+    background-image: url('imagens/imagemmm.jpg');
+    /*flexibilizando o layout para alinhamento vertical*/
+    display: flex;
+    align-items: center;
+}
+#banner h1{
+    text-align: center;
+    font-family: 'Montserrat',sans-serif;
+    color: #ffffff;
+    font-size: 4em;
+    text-transform: uppercase;/*Deixa a letra Maiusculo*/
+}
+/***********Heading Line***********/
+#heading{
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+    font-weight: 400;
+}
+#html5{
+    font-weight: 600; /*negrito*/
+    color: #800000;
+}
+#css3{
+    font-weight: 600; /*negrito*/
+    color: #a9a9a9;
+}
+/**********Destaque***********/
+#destaque{
+    max-width: 1024px;
+    height: 320px;
+}
+
+.card{
+    width: 16.7%;
+    height: 320px;
+    float: left;
+    margin-left: 2.5%;
+    border: 1px solid #a9a9a9;
+    text-align: center;
+    position: relative;/* posicionamento*/
+}
+.card2{
+    width: 30%;
+    height: 320px;
+    float: left;
+    margin-left: 2.5%;
+    border: 1px solid #a9a9a9;
+    text-align: center;
+    position: relative;/* posicionamento*/
+}
+.card3{
+    width: 94.2%;
+    height: 320px;
+    float: left;
+    margin-left: 2.5%;
+    border: 1px solid #a9a9a9;
+    text-align: center;
+    position: relative;/* posicionamento*/
+}
+.card p{
+    padding: 8px;
+}
+.card2 p{
+    padding: 8px;
+}
+.card3 p{
+    padding: 8px;
+}
+.card a{
+    width: 80px; /* só é aceito em position absolute*/
+    height: 30px;
+    background-color: #a00000;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.85em;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    text-align: center;
+    padding-top: 7px;
+}
+.card2 a{
+    width: 80px; /* só é aceito em position absolute*/
+    height: 30px;
+    background-color: #a00000;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.85em;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    text-align: center;
+    padding-top: 7px;
+}
+.card3 a{
+    width: 80px; /* só é aceito em position absolute*/
+    height: 30px;
+    background-color: #a00000;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.85em;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    text-align: center;
+    padding-top: 7px;
+}
+/*************Conteudo********/
+.Conteudo{
+    margin-top: 102px;
+    padding: 20px;
+}
+/*************Formulario de contato**************/
+#contato{
+    padding-top: 102px;
+    width: 70%;
+    margin: 0 auto;
+}
+#contato h1{
+    margin-bottom: 30px;
+}
+#contato input[type=text]{
+    width: 100%;
+    border: 1px solid #a00000;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px; /*arredondar os cantos*/
+}
+#contato textarea{
+    width: 100%;
+    border: 1px solid #a00000;
+    border-radius: 5px;
+    padding: 10px 10px 40px 10px;
+    resize: none;
+}
+#contato input[type=submit]{
+    background-color: #800000;
+    border: 1px solid black;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 12px 27px 12px 27px;
+}
+
+iframe{
+    
+    
+    margin-top: 20px;
+    padding: 50px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 0.75em;
+}
+
+/***********Rodapé************/
+footer{
+    background-color: #a00000;
+    margin-top: 50px;
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 0.750em;/*responsividade ver tabela conversão*/
+}
+
+/**************Selo***************/
+#selo{
+    max-width: 1024px;
+    margin: 0 auto;/*centraliza*/
+    margin-top: 15px;
+}
+
+ /* é possivel redimensionar a imagem diretamente pelo CSS*/
+     /* Não recomendado por questoes de desempenho*/
+ /*header img{
+    
+     width: 195px;
+     height: 150px;
+     margin-left: 40px;
+ }*/
+
+/****************Tratamento Responsivo********/
+/***************torna todas as imagens responsivas***/
+img{
+    max-width: 100%;
+}
+/* o bloco abaixo, modifica o comportamento do CSS para telas
+com tamanho de até 480px*/
+@media screen and (max-width: 480px){
+
+    /************ principal*******/
+
+    #main{
+        margin: 0;
+    }
+    header{
+        text-align: center; /* centralizar todos os elementos*/
+    }
+    #social{
+        float: none;
+        padding-right: 0;
+    }
+
+    /******Menu********/
+    .Mobile{
+        display: block;
+        background-color: #a00000;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 15px;
+    }
+    nav{
+        z-index: 3;/*eleva 3 camadas*/
+    }
+    nav > ul > li{
+        float: none;
+        width: 100%;
+    }
+    nav ul{
+        display: none;
+    }
+    /*****Melhorando UX (User eXperience) ***/
+    nav ul li a{
+        text-align: left;
+    }
+    nav li ul li{
+        background-color: #00000031;
+    }
+    nav li ul li a{
+        background-color: #800000;
+        padding-left: 40px; 
+    }
+    /*********Banner***********/
+    #banner{
+        height: 175px;
+    }
+    #banner h1{
+        font-size: 1.5em;
+    }
+    /*********heading*********/
+    #heading{
+        width: 90%;
+        padding: 20px;
+    }
+    #heading h2{
+        font-size: 1em;
+    }
+    /*********Cards***********/
+    #destaque{
+        max-width: 315px;
+        margin: 0 auto;
+        height: auto;
+    }
+    .card{
+        float: none;
+        width: 100%;
+        height: 320px;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .card2{
+        float: none;
+        width: 100%;
+        height: 320px;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .card3{
+        float: none;
+        width: 100%;
+        height: 320px;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+}

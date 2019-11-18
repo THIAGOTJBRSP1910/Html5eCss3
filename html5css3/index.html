@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <!--a linha abaixo garante a compatibilidade com relação aos diversos tamanhos de tela-->
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Home - html5 css3</title>
+        <meta name="description" content="Aprenda html5 e css3 de forma prática desenvolvendo passo a passo um site responsivo">
+        <link rel="shortcut icon" href="imagens/favicon.png">
+        <link rel="stylesheet" href="style.css"><!--link:css(atalho)-->
+        <script src="scripts/jquery-3.4.1.min.js"></script>
+    </head>
+        <body onLoad=slide1()>
+            <div id="main">
+            <header>
+            <div id="buscar">
+                    <script async src="https://cse.google.com/cse.js?cx=007373930998973823733:j2yugcxm6uf"></script>
+                    <div class="gcse-search"></div>
+            </div>    
+            <div id="social">
+                <a href="https://www.youtube.com/channel/UC1mWz-Qu7LkoWJujCCOr10Q?view_as=subscriber" target="_blank"><img src="imagens/youtube.png" alt="youtube"></a>
+                <a href="https://pt-br.facebook.com/MAIKI021/" target="_blank"><img src="imagens/facebook.png" alt="facebook"></a>
+                <a href="https://twitter.com/renatogarciayt" target="_blank"><img src="imagens/twitter.png" alt="twitter"></a>
+                <a href="https://br.linkedin.com/in/murilo-solano-oliva-1237a6124" target="_blank"><img src="imagens/linkedin.png" alt="linkedin"></a>
+            </div>
+            <div id="logo">   
+                <a href="index.html"><img src="imagens/logo.png" title="HTML5 + CSS3" alt="html5 css3"></a>
+            </div> 
+            </header>
+            
+            
+            <nav class="Menu">
+                <a href="#" class="Mobile">&#9776; Menu</a>
+                <ul><!--Cria menu e lista-->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="#" class="Detalhes">Conteúdo </a>
+                        <ul>
+                            <li><a href="html5/html5.html">html5</a></li>
+                            <li><a href="css3/css3.html">css3</a></li>
+                            <li><a href="javascrip/javascripit.html">javascripit</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <img src="banner1.jpg" alt="slideshow" id="banner">
+            <section id="heading">
+                <h2>Aprenda <span id="html5">HTML5</span> e <span id="css3">CSS3</span> de forma prática e divertida desenvolvendo
+                    passo a passo um site responsivo</h2>
+            </section>
+            <section id="destaque">
+                <div class="card2">
+                    <img src="imagens/html5.png" alt="html5">
+                    <h3>HTML5</h3>
+                    <p>HTML5 é a quinta versão da linguagem usada para a publicação de conteúdo na web</p>
+                    <a href="html5/html5.html">html5</a>
+                </div>
+                <div class="card2">
+                    <img src="imagens/css3.png" alt="css3">
+                    <h3>CSS3</h3>
+                    <p>CSS é a linguagem Web usada para definir como deve ser a formatação do conteúdo HTML</p>
+                    <a href="css3/css3.html">css3</a>
+                </div>
+                <div class="card2">
+                        <img src="imagens/javascript.png" alt="javascript">
+                        <h3>Javascript</h3>
+                        <p>JavaScript frequentemente abreviado como JS, é uma linguagem de programação interpretada de alto nível.</p>
+                        <a href="https://pt.wikipedia.org/wiki/JavaScript" target="_blank">javascript</a>
+                </div>
+            </section>
+            <footer>
+                <p>©2019 - Professor Thiago TJ</p>
+            </footer>
+        </div>
+        <div id="selo">
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                    src="http://jigsaw.w3.org/css-validator/images/vcss"
+                    alt="CSS válido!" />
+            </a>
+        </div>
+        <img src="imagens/seta_topo.png" class="Top" alt="Seta topo" title="Topo do site">
+        <script src="scripts/topo.js"></script>	
+        
+        <!--scripts JS/QUERY usados no menu responsivo-->
+        <script src="slide.js"></script>
+        <script src="scripts/menuresponsivo.js"></script>
+        <script src="scripts/fixamenu.js"></script>
+        <script src="scripts/removeclick.js"></script>
+
+        </body>
+    
+</html>

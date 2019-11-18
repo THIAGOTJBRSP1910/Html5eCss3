@@ -1,0 +1,39 @@
+/**
+* estudo do float
+* @author thiago
+*/
+
+/*
+float: right (flutua a direita do elemento anterior)
+float: right (flutua a esquerda do elemento anterior)
+*/
+#main{
+    max-width: 750px;
+    height: 750px;
+    margin: 0 auto;
+    background-color: #000000;
+}
+
+#vermelho{
+    width: 250px;
+    height: 250px;
+    background-color: #ff0000;
+    float: left;
+}
+#verde{
+    width: 250px;
+    height: 250px;
+    background-color: #adff2f;
+    float: left;
+}
+#azul{
+    width: 250px;
+    height: 250px;
+    background-color: #0000ff;
+    float: left;
+}
+#amarelo{width: 250px;
+    height: 250px;
+    background-color: #ffff00;
+    clear: both; /* deixa o objeto no mesmo contexto (nivel)*/
+}

@@ -1,0 +1,8 @@
+body{
+    font-family: sans-serif;
+}
+#texto{
+    background-color: #FFF012;
+    padding: 50px;
+    position: static;
+}

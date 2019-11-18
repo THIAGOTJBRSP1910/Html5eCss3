@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Estudo do position</title>
+</head>
+<body>
+    <h1>Position</h1>
+    <div id="static">
+        <p>O valor position:static não se posiciona de forma
+            especial(default se omitido)</p>
+    </div>
+    <div id="relative">
+        <p>position:relative se comporta igual ao position:static,
+            exceto se for adicionado as propriedades (top,right,bottom e let)
+            no estilo do elemento</p>
+    </div>
+    <div id="relative2">
+        <p>Este elemento está configurado com position:relative,se
+            este elemento não estivesse configurado desta forma seu
+            elemento filho escaparia e se posicionaria em relação ao
+            elemento pai(neste caso o body)</p>
+            <div id="absolute">
+                <p>Este elemento esta configurado como position:
+                    absolute e esta posicionado em relação ao seu elemento
+                    pai(div id="absolute")gui meu pato e solano pato</p>
+            </div>
+    </div>
+    <div id="fixed">
+        <p>Um elemento position:fixed sempre é posicionado em relação ao documento
+            html, ou seja ele sempre ficara posicionado no mesmo lugar</p>
+    </div>
+</body>
+</html>
